@@ -36,6 +36,9 @@ Observed distributions were derived from Fig. 3b of Engelhard et al., 2019.
   * 5 variables: 1 neuron
 
 # To run the code 
-* Download the notebook
+* Download the notebook together with the required '.csv' files:
+  * feature_probs.csv
+  * observed_counts.csv
+* Place all files in the same folder 
 * Open the notebook using Jupyter Notebook
 * Run all cells sequentially  
