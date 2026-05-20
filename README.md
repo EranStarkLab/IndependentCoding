@@ -19,21 +19,21 @@ Prevalence of encoding every variable were derived from Fig. 2a of Engelhard et 
 * Reward response: 232/303
 
 Observed distributions were derived from Fig. 3b of Engelhard et al., 2019. 
-* Observed distributions for all neurons population:
-   * 0 variables: 47 neurons
-   * 1 variable: 105 neurons
-   * 2 variables: 103 neurons
-   * 3 variables: 40 neurons
-   * 4 variables: 6 neurons
-   * 5 variables: 2 neurons
+Observed distributions for all neurons population:
+* 0 variables: 47 neurons
+* 1 variable: 105 neurons
+* 2 variables: 103 neurons
+* 3 variables: 40 neurons
+* 4 variables: 6 neurons
+* 5 variables: 2 neurons
 
-* Observed distributions for reward responsive neurons:
-   * 0 variables: 30 neurons
-   * 1 variable: 84 neurons
-   * 2 variables: 77 neurons
-   * 3 variables: 35 neurons
-   * 4 variables: 5 neurons
-   * 5 variables: 1 neuron
+Observed distributions for reward responsive neurons:
+* 0 variables: 30 neurons
+* 1 variable: 84 neurons
+* 2 variables: 77 neurons
+* 3 variables: 35 neurons
+* 4 variables: 5 neurons
+* 5 variables: 1 neuron
 
 # To run the code 
 * Download the notebook
