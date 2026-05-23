@@ -1,4 +1,4 @@
-# IndependentCoding
+# This repository contains code to estimate the expected distribution of encoded variables based on the prevalence of every encoded variable
 Code used for analysis of neuronal encoding overlap distributions based on Fig. 3b from Engelhard et al., 2019.
 # Analysis
 encoding_distribution_analysis.ipnyb
@@ -9,7 +9,7 @@ encoding_distribution_analysis.ipnyb
    * Kolmogorv-Smirnov test
    * Geometric mean of binomial probabilities 
 # Data 
-Prevalence of encoding every variable were derived from Fig. 2a of Engelhard et al., 2019.
+Prevalence values of encoding every variables were derived from Fig. 2a of Engelhard et al., 2019.
 * Total neuron population: 303
 * Position: 91/303
 * Kinematics: 137/303
