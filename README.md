@@ -2,14 +2,15 @@
 This repository contains code to estimate the expected distribution of encoded variables based on the prevalence of every encoded variable, using neuronal encoding overlap distributions based on Fig. 3b from Engelhard et al., 2019.
 ## Code 
 encoding_distribution_analysis.ipnyb
-keep the first three? and then add the routines? 
+**keep the first three? and then add the routines? 
 * Calculation of expected overlap distribution assuming independent encoding
 * Comparison between observed and expected neuronal distributions
-* Statistical analysis using:
-   *probability_k_feature:  
+* Statistical analysis using:  
    * Binomial right-tail probabilities
    * Kolmogorv-Smirnov test
-   * Geometric mean of binomial probabilities 
+   * Geometric mean of binomial probabilities
+
+* probability_k_feature: 
 ## Data 
 Prevalence values of encoding every variables were derived from Fig. 2a of Engelhard et al., 2019.
 * Total neuron population: 303
