@@ -59,14 +59,12 @@ def binom_right_tail(n, k_obs, p):
     return total
 
 #Discrete distribution expansion
-#This function converts discrete values and their counts into an expanded vector representation.
+#This function converts discrete values and their counts into an expanded vector representation 
+#and compares the observed and expected distributions using a two-sided K.S. test.
 def ks_discrete_test(values, observed_counts, expected_counts):
   observed_distribution=[]
   expected_distribution=[]
   for value, observed, expected in zip(values, observed_counts, np.round(expected_counts)):
     observed_distribution.extend([int(value)]*int(observed))
     expected_distribution.extend([int(value)]*int(expected))
-
-
-
   return ks_2samp(observed_distribution, expected_distribution, alternative='two-sided')
