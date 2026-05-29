@@ -39,7 +39,9 @@ Observed distributions were derived from Fig. 3b of Engelhard et al., 2019.
   * 5 variables: 1 neuron
 
 ## To run the code 
-* Download the notebook together with the required '.csv' files:
+* Download the notebook together with the required files:
+  * encoding_distribution_analysis.ipynb
+  * computational_routines.py
   * feature_probs.csv
   * observed_counts.csv
 * Place all files in the same folder 
