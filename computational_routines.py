@@ -11,22 +11,8 @@ Original file is located at
 #Import packages and functions needed for probability calculations, statistical tests, table generation, and plotting.
 
 from itertools import combinations
-from math import prod, comb
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-from scipy.stats import ks_2samp, gmean
-import sys
-import matplotlib
-import scipy
-
-#Print Python and package versions used in the analysis.
-
-print("Python:", sys.version)
-print("NumPy:", np.__version__)
-print("Pandas:", pd.__version__)
-print("Matplotlib:", matplotlib.__version__)
-print("SciPy:", scipy.__version__)
+from scipy.stats import ks_2samp
 
 #Probability calculation routine
 #This function calculates:
