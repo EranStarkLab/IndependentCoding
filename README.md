@@ -1,5 +1,5 @@
 ## **IndependentCoding** 
-This repository contains code to estimate the expected distribution of encoded variables based on the prevalence of every encoded variable, using neuronal encoding overlap distributions based on Fig. 3b from Engelhard et al., 2019.
+This repository contains code to estimate the expected distribution of encoded variables based on the prevalence of every encoded variable.
 ## Code 
 **computational_routines.py**:\
 collection of functions used throughout the analysis that includes routines for probability calculations, expected distributions, biomial test, and Kolmogrov-Sirnov test.\
