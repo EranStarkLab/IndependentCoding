@@ -7,42 +7,20 @@ collection of functions used throughout the analysis that includes routines for 
   * binomial_right_tail: calculates the right-tail probability for an observed count in a binomial distribution
   * ks_discrete_test: converts discrete values and their counts into an expanded vector representation and compares the observed and expected distibutions using two-sided K.S. test 
 
-encoding_distribution_analysis.ipnyb
-##
+* **encoding_distribution_analysis.ipnyb**: main analysis notebook that loads the data and performs all calculations using computational_routines.py, statistical analysis and generates the figures. 
 * Calculation of expected overlap distribution assuming independent encoding
 * Comparison between observed and expected neuronal distributions
 * Statistical analysis using:  
    * Binomial right-tail probabilities
    * Kolmogorv-Smirnov test
    * Geometric mean of binomial probabilities
-
-* probability_k_feature: 
+ 
 ## Data 
 Prevalence values of encoding every variables were derived from Fig. 2a of Engelhard et al., 2019.
-* Total neuron population: 303
-* Position: 91/303
-* Kinematics: 137/303
-* Cues: 77/303
-* Accuracy: 69/303
-* Previous reward: 95/303
-* Reward response: 232/303
+* prevalence of encoding for each behavioral variable are shown feature_probs.csv file 
 
 Observed distributions were derived from Fig. 3b of Engelhard et al., 2019. 
-* Observed distributions for all neurons population:
-  * 0 variables: 47 neurons
-  * 1 variable: 105 neurons
-  * 2 variables: 103 neurons
-  * 3 variables: 40 neurons
-  * 4 variables: 6 neurons
-  * 5 variables: 2 neurons
-
-* Observed distributions for reward responsive neurons:
-  * 0 variables: 30 neurons
-  * 1 variable: 84 neurons
-  * 2 variables: 77 neurons
-  * 3 variables: 35 neurons
-  * 4 variables: 5 neurons
-  * 5 variables: 1 neuron
+* Observed distributions for all neurons population and for reward responsive neurons are shown in observed_counts.csv 
 
 ## To run the code 
 * Download the notebook together with the required files:
