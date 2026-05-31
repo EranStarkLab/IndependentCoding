@@ -2,8 +2,8 @@
 This repository contains code to estimate the expected distribution of encoded variables based on the prevalence of every encoded variable, using neuronal encoding overlap distributions based on Fig. 3b from Engelhard et al., 2019.
 ## Code 
 * **computational_routines.py**:
-collection of functions used throughout the analysis that includes routines for probability calculations, expected distributions, biomial test, and Kolmogrov-Sirnov test.
-\ Functions:
+collection of functions used throughout the analysis that includes routines for probability calculations, expected distributions, biomial test, and Kolmogrov-Sirnov test.\
+Functions:
   * probability_k_features: gives the probability of exactly k encoded features assuming independent encoding between features
   * binomial_right_tail: calculates the right-tail probability for an observed count in a binomial distribution
   * ks_discrete_test: converts discrete values and their counts into an expanded vector representation and compares the observed and expected distibutions using two-sided K.S. test 
