@@ -17,9 +17,9 @@ from math import comb
 
 #Probability calculation routine
 #This function calculates:
-##the probability of exactly k encoded features
-##the expected number of neurons encoding k features
-#assuming independent encoding between features.
+## 1) the probability of exactly k encoded features
+## 2)the expected number of neurons encoding k features
+#assuming independent encoding between features
 
 def probability_k_features(k, probs_dict, n_neurons):
   features=list(probs_dict.keys())
@@ -45,9 +45,12 @@ def binom_right_tail(n, k_obs, p):
         total+=pmf
     return total
 
-#Discrete distribution expansion
-#This function converts discrete values and their counts into an expanded vector representation 
-#and compares the observed and expected distributions using a two-sided K.S. test.
+#Kolmogorov-Smirnov test routine: 
+#This function:
+## 1)converts observed and expected count distributions into enumerated sample vector
+## 2)compares the observed and expected distributions using a two-sample Kolmogorov-Smirnov test.
+
+
 def ks_discrete_test(values, observed_counts, expected_counts):
   observed_distribution=[]
   expected_distribution=[]
