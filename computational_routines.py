@@ -9,32 +9,34 @@ Original file is located at
 
 # 07-May-26, Noor Natour
 # Import packages and functions needed for probability calculations, statistical tests, table generation, and plotting.
-# 09-Jun-26, Last update, NN
+# 10-Jun-26, Last update, NN
+
 
 from itertools import combinations
 import numpy as np
 from scipy.stats import ks_2samp
 from math import comb 
 
+
 # Probability calculation routine
 # Assuming independent encoding between features, this function calculates:
 ## 1) the probability of exactly k encoded features
 ## 2) the expected number of neurons encoding k features
 
-
-def probability_k_features(k, probs_dict, n_neurons):
-  features=list(probs_dict.keys())
+def probability_k_variables(k, probs_dict, n_neurons):
+  variables=list(probs_dict.keys())
   total_prob=0
-  for active_neurons in combinations(features, k):
+  for active_neurons in combinations(variables, k):
     p=1
-    for f in features:
-      if f in active_neurons:
-        p*=probs_dict[f]
+    for v in variables:
+      if v in active_neurons:
+        p*=probs_dict[v]
       else:
-        p*=(1-probs_dict[f])
+        p*=(1-probs_dict[v])
     total_prob+=p
   expected_neurons=n_neurons*total_prob
   return total_prob, expected_neurons
+
 
 # Binomial right-tail probability
 # This function calculates the right-tail probability for an observed count in a binomial distribution.
@@ -46,11 +48,11 @@ def binom_right_tail(n, k_obs, p):
         total+=pmf
     return total
 
+
 # Kolmogorov-Smirnov test routine 
 # This function:
 ## 1) converts observed and expected count distributions into enumerated sample vector
 ## 2) compares the observed and expected distributions using a two-sample Kolmogorov-Smirnov test.
-
 
 def ks_discrete_test(values, observed_counts, expected_counts):
   observed_distribution=[]
@@ -60,16 +62,15 @@ def ks_discrete_test(values, observed_counts, expected_counts):
     expected_distribution.extend([int(value)]*int(expected))
   return ks_2samp(observed_distribution, expected_distribution, alternative='two-sided')
 
+
 # Specialization peak calculation routine
 # Assuming independent encoding and equal prevalence across all variables, this function calculates:
 ## 1) the prevalence that produces the largest number of neurons encoding exactly one variable 
 ## 2) the probability of encoding exactly one variable at that prevalence 
-  
 
 def peak_properties(k):
   p0_max=1/k
   max_probability=(1-1/k)**(k-1)
-
   return p0_max, max_probability
 
 
