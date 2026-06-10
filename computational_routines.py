@@ -19,9 +19,9 @@ from math import comb
 
 
 # Probability calculation routine
-# Assuming independent encoding between features, this function calculates:
-## 1) the probability of exactly k encoded features
-## 2) the expected number of neurons encoding k features
+# Assuming independent encoding between variables, this function calculates:
+## 1) the probability of exactly k encoded variables
+## 2) the expected number of neurons encoding k variables
 
 def probability_k_variables(k, probs_dict, n_neurons):
   variables=list(probs_dict.keys())
