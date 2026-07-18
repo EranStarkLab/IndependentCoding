@@ -29,18 +29,15 @@ This notebook examine how variable prevalence affects the expected distribution 
 
  
 ## Data 
-* **observed_neurons.csv:**\
-Contains the prevalence of encoding for each behavioral variable, derived from Fig. 2a of Engelhard et al., 2019.  
-* **observed_counts.csv**:\
-Contains the observed numbers of encoding 0-5 variables for the all neurons population and the reward responsive neurons subset, derived from Fig. 3b of Engelhard et al., 2019.
+* **sig_all.mat**:\
+contains the binary encoding matrix used for the analyses. Each row represents a single neuron, and the six columns correspond to Cues, Position, Kinematics, Accuracy, Previous reward, and Reward, with entries of 1 or 0 indicating whether the neuron encoded the corresponding variable.
 
 ## To run the code 
 * Download the notebooks together with the required files:
   * encoding_distribution_analysis.ipynb
   * prevalence_simulations.ipnyb
   * computational_routines.py
-  * observed_neurons.csv
-  * observed_counts.csv
+  * sig_all.mat
 * Place all files in the same folder 
 * Open every notebook using Jupyter Notebook
 * Run all cells sequentially  
